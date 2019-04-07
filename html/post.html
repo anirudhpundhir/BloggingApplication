@@ -11,8 +11,73 @@
 </head>
 <body>
         <div class="header">
-             <!-- Insert code for Sign Up, Sign In button here. 
-               Add code for "ScriBBler" heading and the sub-heading -->
+            <input class="btnSignUp" type="button" id="signup-button" value="Sign Up">
+            <input class="btnSignIn" type="button" id="signin-button" value="Sign In">
+            <a class="pageTitle">ScriBBler</a>
+            <p class="subHeading">Explore, Imagine, Create</p>
+        </div>
+		
+	<div>
+            <!-- code for Sign In modal here -->
+            <div id="signin-modal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close-signin">&times;</span>
+                        <h2>Welcome Back!</h2>
+                    </div>
+                    <hr>
+                    <div class="modal-body">
+                        <form>
+                            <div class="container">
+                                <label for="username"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="username" required/>
+
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required/>
+
+                                <button type="submit" class="signin-button">Sign In</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Not a member? <a href="#" id="signup-link">Sign Up</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <!-- code for Sign Up modal here -->
+            <div id="signup-modal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close-signup">&times;</span>
+                        <h2>Get Started</h2>
+                    </div>
+                    <hr>
+                    <div class="modal-body">
+                        <form>
+                            <div class="container">
+                                <label for="full_name"><b>Full Name</b></label>
+                                <input type="text" placeholder="Enter Full Name" name="full_name" required/>
+
+                                <label for="username"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="username" required/>
+
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required/>
+
+                                <label for="psw-confirm"><b>Confirm Password</b></label>
+                                <input type="password" placeholder="Confirm Password" name="psw-confirm" required/>
+
+                                <button type="submit" class="signup-button">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
 
     <div class="fluid-container">
@@ -56,6 +121,9 @@
     </div>
     </div>
 </div>
+    
+
+    <!-- Insert code for Like button, Comment button, Comment box here-->
 
     <script src="..\js\post.js" defer></script>
     <script src="..\js\header.js">             
