@@ -1,5 +1,7 @@
+
 var editBtn = document.getElementById("editBtn");
 var likeBtn = document.getElementById("likeBtn");
+var commentBtn= document.getElementById("commentBtn");
 var likeCount=0;
 
 editBtn.onclick=function(event){
