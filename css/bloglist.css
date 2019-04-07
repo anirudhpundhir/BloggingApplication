@@ -34,6 +34,7 @@
     color: #2b312b;
     font-size: 25px;
     height: 25px;
+    overflow: hidden;
 }
 .post-more {
     float: right;
