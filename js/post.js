@@ -1,4 +1,6 @@
 var editBtn = document.getElementById("editBtn");
+var likeBtn = document.getElementById("likeBtn");
+var likeCount=0;
 
 editBtn.onclick=function(event){
     if(this.value=="edit"){
@@ -16,4 +18,17 @@ editBtn.onclick=function(event){
     this.innerHTML="Edit";
     this.value="edit";
     }
+}
+
+likeBtn.onclick=function(event){
+    likeCount++;
+    var displayString;
+    if(likeCount==1) {
+        displayString = "1 person likes this!";
+    }
+    else{
+        displayString = likeCount+" person have liked this!";
+    }
+    this.innerHTML="Liked";
+    document.getElementById("likeBtnText").innerText=displayString;
 }
