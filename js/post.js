@@ -32,3 +32,11 @@ likeBtn.onclick=function(event){
     this.innerHTML="Liked";
     document.getElementById("likeBtnText").innerText=displayString;
 }
+
+commentBtn.onclick=function(){
+    var userComment = document.getElementById("commentBox").value;
+    var comment = '<div class="comment">'+ userComment +'</div>';
+    var previousComments = document.getElementById("commentContainer").innerHTML;
+    document.getElementById("commentContainer").innerHTML=comment+previousComments;
+    document.getElementById("commentBox").value="";
+}
